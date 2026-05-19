@@ -576,14 +576,21 @@ section { position: relative; z-index: 1; padding: 6rem 6%; }
 
 
 /* ABOUT */
+
+.section-title h2 {
+  margin-top: 1rem;
+  margin-bottom:3rem;
+}
 #about{background:var(--navy2);}
 .about-grid{
   display:grid;grid-template-columns:1fr 1fr;
   gap:4rem;align-items:start;
+
 }
 .about-text p{
   color:var(--muted2);line-height:1.9;
   margin-bottom:1.25rem;font-size:1rem;
+
 }
 .about-text p strong{color:var(--white);font-weight:500;}
 .about-highlight{
