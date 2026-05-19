@@ -38,7 +38,7 @@ body {
   background: var(--bg);
   color: var(--slate);
   font-family: 'Plus Jakarta Sans', sans-serif;
-  line-height: 1.67;
+  line-height: 1.7;
   overflow-x: hidden;
   cursor: none;
 }
@@ -588,10 +588,10 @@ section { position: relative; z-index: 1; padding: 6rem 6%; }
 
 }
 .about-text p{
-  color:var(--muted2);line-height:1.9;
+  color:var(--muted2);line-height:2.2
   margin-bottom:1.25rem;font-size:1rem;
-
 }
+
 .about-text p strong{color:var(--white);font-weight:500;}
 .about-highlight{
   margin-top:2rem;
@@ -978,7 +978,7 @@ section { position: relative; z-index: 1; padding: 6rem 6%; }
 .tl-points { list-style: none; margin-bottom: 1rem; }
 .tl-points li {
   font-size: .85rem; color: var(--slate2); padding: .3rem 0;
-  padding-left: 1.2rem; position: relative; line-height: 1.55;
+  padding-left: 1.2rem; position: relative; line-height: 1.65
 }
 .tl-points li::before {
   content: '▸'; position: absolute; left: 0; color: var(--indigo); font-size: .7rem;
