@@ -122,6 +122,38 @@ function typeWriter() {
 
   setTimeout(typeWriter, delay);
 }
+
+/* ===== Subtle profile parallax + breathing ===== */
+;(function profileParallax(){
+  const wrapper = document.querySelector('.profile-wrapper');
+  const shell = document.querySelector('.profile-shell');
+  if (!wrapper || !shell) return;
+
+  let mouseX = 0, mouseY = 0;
+  window.addEventListener('mousemove', (e) => {
+    const rect = wrapper.getBoundingClientRect();
+    const cx = rect.left + rect.width / 2;
+    const cy = rect.top + rect.height / 2;
+    const dx = (e.clientX - cx) / rect.width;
+    const dy = (e.clientY - cy) / rect.height;
+
+    // subtle parallax on rings and blob
+    const ringOuter = wrapper.querySelector('.ring-outer');
+    const ringInner = wrapper.querySelector('.ring-inner');
+    const blob = wrapper.querySelector('.profile-bg-blob');
+
+    if (ringOuter) ringOuter.style.transform = `translate(${dx * 6}px, ${dy * 8}px) rotate(${(dx+dy)*2}deg)`;
+    if (ringInner) ringInner.style.transform = `translate(${dx * -6}px, ${dy * -8}px) rotate(${(dx+dy)*-2}deg)`;
+    if (blob) blob.style.transform = `translate(${dx * 14}px, ${dy * 10}px)`;
+  });
+
+  // gentle breathing pulse (uses CSS keyframes already)
+  // reduce motion respect
+  const prefersReduce = window.matchMedia('(prefers-reduced-motion: reduce)');
+  if (prefersReduce && prefersReduce.matches) {
+    shell.style.animation = 'none';
+  }
+})();
 setTimeout(typeWriter, 900);
 
 
