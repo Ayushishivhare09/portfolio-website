@@ -491,6 +491,10 @@ section { position: relative; z-index: 1; padding: 6rem 6%; }
   gap: 0.9rem;
   margin-top: 18px;
   justify-content: center;
+  width: 100%;
+  max-width: 420px;
+  margin-left: auto;
+  margin-right: auto;
   z-index: 10;
 }
 
@@ -524,6 +528,7 @@ section { position: relative; z-index: 1; padding: 6rem 6%; }
   width: 100%;
   max-width: 420px;
   margin-top: 1rem;
+  align-items: center;
 }
 .hc {
   position: relative;
@@ -549,6 +554,7 @@ section { position: relative; z-index: 1; padding: 6rem 6%; }
   width: 100%;
   display: flex;
   align-items: center;
+  justify-content: center;
   gap: 1rem;
   animation: cardFloat 6s ease-in-out infinite;
   background: var(--box);
@@ -556,6 +562,12 @@ section { position: relative; z-index: 1; padding: 6rem 6%; }
   border-radius: var(--radius-sm);
   padding: 1rem 1.2rem;
   box-shadow: var(--shadow);
+}
+.hc-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-width: 0;
 }
 .hc-stat {
   width: 100%;
@@ -655,9 +667,9 @@ section { position: relative; z-index: 1; padding: 6rem 6%; }
 .about-highlight{
   margin-top:2rem;
   padding:1.5rem;
-  border:1px solid var(--border2);
+  border:1px solid  --violet#7C3AED;;
   border-left:3px solid var(--blue-light);
-  background:rgba(37,99,235,0.05);
+  background:  --violet#7C3AED; 
   border-radius:0 4px 4px 0;
 }
 .about-highlight p{
