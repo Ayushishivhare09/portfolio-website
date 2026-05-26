@@ -654,13 +654,19 @@ section { position: relative; z-index: 1; padding: 6rem 6%; }
 }
 #about{background:var(--navy2);}
 .about-grid{
-  display:grid;grid-template-columns:1fr 1fr;
-  gap:4rem;align-items:start;
+  display:grid;grid-template-columns:1.4fr 0.9fr;
+  gap:3rem;align-items:start;
 
 }
+.about-text{
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
 .about-text p{
-  color:var(--slate2);line-height:2.2;
-  margin-bottom:1.25rem;font-size:1rem;
+  color:var(--slate2);line-height:1.9;
+  margin:0;font-size:1rem; 
+
 }
 
 .about-text p strong{color:var(--white);font-weight:500;}
