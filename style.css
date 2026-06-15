@@ -1194,7 +1194,7 @@ section { position: relative; z-index: 1; padding: 6rem 6%; }
   padding: .22rem .7rem; border-radius: 99px;
 }
 .edu-status.current { background: #f0fdf4; color: var(--green); border: 1px solid #bbf7d0; }
-.edu-status.done    { background: var(--ind-pale); color: var(--indigo); border: 1px solid var(--ind-mid); }
+.edu-status.done    { background: #f0fdf4; color: var(--indigo); border: 1px solid var(--ind-mid); }
 
 @media(max-width: 600px) { .edu-grid { grid-template-columns: 1fr; } }
 
