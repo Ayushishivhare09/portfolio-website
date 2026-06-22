@@ -219,14 +219,20 @@ nav.scrolled { border-color: var(--border); box-shadow: var(--shadow); }
     max-width: 280px;
     margin-top: 2rem;
   }
-
+  .hc-main {
+    flex-direction: column;
+    width: 100%;
+    max-width: 280px;
+    margin-top: 4rem;
+    display: flex;
+  }
   .hc,
   .hc-main,
   .hc-stat,
   .hc-stat2,
   .hc-badge {
     width: 100% !important;
-    display: block;
+    display: flex;
   }
 }
 
@@ -673,8 +679,8 @@ section { position: relative; z-index: 1; padding: 6rem 6%; }
 .about-highlight{
   margin-top:2rem;
   padding:1.5rem;
-  border:1px solid  --violet#7C3AED;;
-  border-left:3px solid var(--blue-light);
+  border:1.5px solid --slate #F3F7FB; ;
+  border-left:3px solid --slate #F3F7FB;;
   background:  --violet#7C3AED; 
   border-radius:0 4px 4px 0;
 }
@@ -1333,7 +1339,7 @@ footer {
   .hc-stat2,
   .hc-badge {
     width: 100% !important;
-    display: block;
+    display: flex;
   }
   .scroll-down { display: none; }
 }
