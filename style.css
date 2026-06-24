@@ -679,9 +679,9 @@ section { position: relative; z-index: 1; padding: 6rem 6%; }
 .about-highlight{
   margin-top:2rem;
   padding:1.5rem;
-  border:1.5px solid --slate #F3F7FB; ;
-  border-left:3px solid --slate #F3F7FB;;
-  background:  --violet#7C3AED; 
+  border:1.5px solid --slate #F3F7FB !important;  
+  border-left:3px solid --slate #F3F7FB !important;
+  background:  --slate #F3F7FB !important;
   border-radius:0 4px 4px 0;
 }
 .about-highlight p{
